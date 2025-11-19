@@ -87,11 +87,11 @@ CSV data sources
 Repository Structure
 /ER-Patient-Flow-Dashboard
 │
-├── Emergency_Room_Dashboard.pbix
 ├── /screenshots
 │     ├── dashboard_page1.png
 │     ├── dashboard_page2.png
 │     └── patient_list.png
+├── Emergency_Room_Dashboard.pbix
 └── README.md
 
 How to Use This Dashboard
