@@ -1,104 +1,106 @@
-Emergency Room Patient Flow Dashboard
+# Emergency Room Patient Flow Dashboard
 
-A Power BI Analytics Project
+## Project Overview
 
-This Power BI dashboard provides a comprehensive analysis of Emergency Room (ER) patient flow, focusing on key patient demographics, admission patterns, wait times, and operational performance metrics.
+This Power BI dashboard provides a comprehensive analysis of Emergency Room (ER) patient flow, focusing on patient demographics, admission patterns, wait times, and operational performance metrics.
 
-The dashboard helps hospital administrators, ER managers, and analysts monitor patient volume, identify bottlenecks, optimize staffing and improve patient experience.
+The dashboard enables hospital administrators and ER managers to monitor patient volume, identify bottlenecks, optimize staffing, and improve patient experience.
 
-The project demonstrates skills in:
-Power BI visual design
-Data modeling & relationships
-DAX-based KPI creation
-Analytical storytelling
-Interactive reporting (date & category filters)
+---
 
-Objectives
+## Business Objectives
 
-The dashboard aims to answer the following key questions:
+The dashboard answers the following key questions:
 
-How many patients visited the ER during the selected period?
-What is the average wait time and satisfaction score?
-What percentage of patients were admitted?
-Which patient demographics (age, gender, race) dominate ER visits?
-Which departments refer the most admissions?
-How does patient arrival vary by day of the week?
-What are the patterns in admissions vs. non-admissions?
+- How many patients visited the ER during the selected period?
+- What is the average wait time and satisfaction score?
+- What percentage of patients were admitted?
+- Which patient demographics dominate ER visits?
+- Which departments refer the most admissions?
+- How does patient arrival vary by day of the week?
+- What are the patterns in admissions vs non-admissions?
 
-Key Performance Indicators (KPIs)
-KPI	Description
-Total Patients	Total ER visits in the selected time period
-Average Wait Time	Mean waiting time before consultation
-Average Satisfaction Score	Patient-provided satisfaction rating
-Total Admissions	Number of patients admitted to the hospital
-Admission %	% of ER patients who were admitted
+---
 
-Dashboard Visuals
-1. Patient Demographics
-Race distribution (e.g., White, African American, Asian, etc.)
-Gender distribution (Male, Female, Not Categorized)
-Age distribution (0–10, 10–20, … 70–80)
+## Key Performance Indicators (KPIs)
 
-2. Operational Metrics
-Patients by day of the week
-Admissions by department referral
-Admissions vs Non-Admissions (Donut chart)
+| KPI | Description |
+|-----|------------|
+| Total Patients | Total ER visits in the selected time period |
+| Average Wait Time | Mean waiting time before consultation |
+| Average Satisfaction Score | Patient satisfaction rating |
+| Total Admissions | Number of patients admitted |
+| Admission % | Percentage of ER patients admitted |
 
-3. Filters
-Year filter
-Month filter
-Date range slicer
-Patient name filter (on the patient list page)
+---
 
-Additional Pages
-1. ER Dashboard – Daywise
-Provides a performance perspective across time periods with trend-based visuals.
-2. Patient List
-A detailed table listing:
-Patient ID
-Full name
-Age
-Gender
-Race
-Wait time
-Admission status
-Admission date
-This enables drill-down and patient-level analytics.
+## Dashboard Pages
 
-Insights 
+### 1. ER Overview Dashboard
+Includes:
+- Patient demographics (Age, Gender, Race)
+- Admissions vs Non-admissions
+- Department referrals
+- Day-of-week arrival trends
+- Operational KPIs
 
-Insights you can include based on your dashboard:
-ER receives 9,200+ patients in the dataset, averaging 35 minutes wait time.
-Admissions represent ~50% of total visits.
-The highest patient volume occurs on Sundays and Mondays.
-“None” category in referral accounts for the largest portion of admitted patients.
-The most represented race is White, followed by African American and Two or More Races.
-Age distribution is fairly balanced, with slightly higher counts in the 20–40 and 40–60 ranges.
-Gender distribution is nearly even between M and F.
+### 2. ER Dashboard – Daywise
+Time-based analysis with trend insights across selected date ranges.
 
-Tools & Technologies Used
+### 3. Patient List
+Detailed patient-level table including:
+- Patient ID
+- Name
+- Age
+- Gender
+- Race
+- Wait time
+- Admission status
+- Admission date
 
-Power BI Desktop (.pbix file)
-Power Query
-DAX formulas
-Data modeling (relationships, hierarchies)
-CSV data sources
+---
 
-Repository Structure
-/ER-Patient-Flow-Dashboard
+## Insights
+
+- 9,200+ patients analyzed in the dataset.
+- Average wait time is approximately 35 minutes.
+- Admissions represent nearly 50% of total visits.
+- Highest patient volume occurs on Sundays and Mondays.
+- “None” referral category accounts for the largest share of admissions.
+- Age distribution is balanced, with slightly higher counts in 20–40 and 40–60 ranges.
+- Gender distribution is nearly even.
+- White patients represent the largest demographic group.
+
+---
+
+## Tools & Technologies Used
+
+- Power BI Desktop
+- Power Query
+- DAX
+- Data Modeling (relationships, hierarchies)
+- CSV data source
+
+---
+
+## Repository Structure
+
+```
+er-patient-flow-dashboard
 │
-├── /screenshots
-│     ├── dashboard_page1.png
-│     ├── dashboard_page2.png
-│     └── patient_list.png
+├── screenshots/
+│   ├── dashboard_page1.png
+│   ├── dashboard_page2.png
+│   └── patient_list.png
 ├── Emergency_Room_Dashboard.pbix
 └── README.md
+```
 
-How to Use This Dashboard
-Download the .pbix file.
-Open it in Power BI Desktop.
-Refresh the data source if required.
-Use the Date, Month, and Category filters to interact with the visualizations.
+---
 
-Connect
-If you’d like help building or improving BI dashboards, feel free to reach out!
+## How to Use
+
+1. Download the `.pbix` file.
+2. Open in Power BI Desktop.
+3. Refresh data if needed.
+4. Use the date and category filters to explore the dashboard interactively.
